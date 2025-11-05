@@ -1,61 +1,92 @@
 # Vivado Project Files
-.Xil/*
-*.cache/*
-*.data/*
-*.hw/*
-*.ip_user_files/*
-*.log
-*.jou
-*.str
-*.backup
-*.bit
-*.bin
-*.elf
-*.mcs
-*.mem
-*.sysdef
+# Temporary and cache directories
+.Xil/
+.cache/
+_ide/
+.settings/
+
+# Build outputs and generated files
+*.runs/
+*.sim/
+*.gen/
+*.hw/
+*.ip_user_files/
+
+# Generated synthesis and implementation files
 *.dcp
 *.rpt
+*.pb
+*.rpx
 *.vdi
 *.vds
-*.xpr
-*.dir
-*.out
-*.runs/*
-*.sim/*
-*.srcs/sources_1/bd/*/synth/*
-*.srcs/sources_1/bd/*/sim/*
-*.srcs/sources_1/bd/*/ip/*
-*.srcs/utils_1/*
-*.srcs/sim_1/*
-*.sdk/*
-*.hls/*
-*.gen_run/*
-*.tmp/*
+
+# Log and journal files
+*.log
+*.jou
+
+# Waveform database files
+*.wdb
+
+# Bitstream and binary files
+*.bit
+*.bin
+*.mcs
+*.mem
+
+# Software/SDK files
+*.elf
+*.sysdef
+*.sdk/
+*.hls/
+
+# Auto-generated scripts
+ISEWrap.js
+ISEWrap.sh
+rundef.js
+runme.bat
+runme.sh
+gen_run.xml
+htr.txt
+dfx_runtime.txt
+
+# Backup files
+*.backup*
+*.bak
+*~
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Generated IP and BD files (keep source .bd files)
+**/*.srcs/sources_1/bd/*/hdl/
+**/*.srcs/sources_1/bd/*/ip/
+**/*.srcs/sources_1/bd/*/ipshared/
+**/*.srcs/sources_1/bd/*/sim/
+**/*.srcs/sources_1/bd/*/synth/
+
+# Utils (auto-generated)
+**/*.srcs/utils_1/
+
+# Simulation files (if not needed)
+**/*.srcs/sim_1/
+
+# HTML reports
 *.html
-*.xml
-*.txt
-*.csv
-*.json
-*.pdf
-_ide/*
-.settings/*
-project_name.tcl.backup
+vivado*.html
 
-# Board design sub-products
-# Example for a board design named 'system' within 'src/design/bd'
-src/design/bd/system/*
-!src/design/bd/system/system.bd
-
-# Vivado generated project directory
-# If using a TCL script to create the project, ignore the entire project directory
-vivado*
-!vivado_startup.tcl # If you have a specific startup script to keep
-
-# Eclipse/SDK related files
-.metadata
+# Eclipse/Vitis related
+.metadata/
 .project
 .cproject
-.settings
 Debug/
 Release/
+
+# Keep these important files (exceptions)
+!*.xdc
+!*.bd
+!*.tcl
+!README.md
+!LICENSE
