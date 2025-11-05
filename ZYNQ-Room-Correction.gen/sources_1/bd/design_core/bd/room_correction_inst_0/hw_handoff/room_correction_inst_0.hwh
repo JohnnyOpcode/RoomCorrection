@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov  5 09:26:20 2025" VIVADOVERSION="2025.1">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:arty-z7-20:part0:1.1" DEVICE="7z020" NAME="room_correction_inst_0" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="8" NAME="AXI4_LITE_RX_araddr" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_araddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_araddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_RX_arready" SIGIS="undef" SIGNAME="spdif_in_s_axi_arready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_arready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_RX_arvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_arvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_arvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="8" NAME="AXI4_LITE_RX_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_awaddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_awaddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_RX_awready" SIGIS="undef" SIGNAME="spdif_in_s_axi_awready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_awready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_RX_awvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_awvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_awvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_RX_bready" SIGIS="undef" SIGNAME="spdif_in_s_axi_bready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_bready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="AXI4_LITE_RX_bresp" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_bresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_bresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_RX_bvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_bvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_bvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="AXI4_LITE_RX_rdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_rdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_rdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_RX_rready" SIGIS="undef" SIGNAME="spdif_in_s_axi_rready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_rready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="AXI4_LITE_RX_rresp" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_rresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_rresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_RX_rvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_rvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_rvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="AXI4_LITE_RX_wdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_wdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_wdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_RX_wready" SIGIS="undef" SIGNAME="spdif_in_s_axi_wready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_wready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="AXI4_LITE_RX_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_wstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_wstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_RX_wvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_wvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_wvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="8" NAME="AXI4_LITE_TX_araddr" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_araddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_araddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_TX_arready" SIGIS="undef" SIGNAME="spdif_out_s_axi_arready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_arready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_TX_arvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_arvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_arvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="8" NAME="AXI4_LITE_TX_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_awaddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_awaddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_TX_awready" SIGIS="undef" SIGNAME="spdif_out_s_axi_awready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_awready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_TX_awvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_awvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_awvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_TX_bready" SIGIS="undef" SIGNAME="spdif_out_s_axi_bready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_bready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="AXI4_LITE_TX_bresp" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_bresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_bresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_TX_bvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_bvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_bvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="AXI4_LITE_TX_rdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_rdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_rdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_TX_rready" SIGIS="undef" SIGNAME="spdif_out_s_axi_rready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_rready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="AXI4_LITE_TX_rresp" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_rresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_rresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_TX_rvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_rvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_rvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="AXI4_LITE_TX_wdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_wdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_wdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI4_LITE_TX_wready" SIGIS="undef" SIGNAME="spdif_out_s_axi_wready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_wready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="AXI4_LITE_TX_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_wstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_wstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI4_LITE_TX_wvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_wvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_wvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="aud_clk_i"/>
+        <CONNECTION INSTANCE="spdif_out" PORT="aud_clk_i"/>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_aclk"/>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_aclk"/>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axis_aclk"/>
+        <CONNECTION INSTANCE="spdif_in" PORT="m_axis_aclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESET">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="s_axi_aresetn"/>
+        <CONNECTION INSTANCE="spdif_out" PORT="s_axi_aresetn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPDIF_RX_spdif" SIGIS="undef" SIGNAME="spdif_in_spdif_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_in" PORT="spdif_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPDIF_TX_spdif" SIGIS="undef" SIGNAME="spdif_out_spdif_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spdif_out" PORT="spdif_o"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_AXI4_LITE_RX" DATAWIDTH="32" NAME="AXI4_LITE_RX" TYPE="SLAVE">
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="16"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="design_core_processing_system7_0_0_FCLK_CLK0"/>
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="AXI4_LITE_RX_araddr"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="AXI4_LITE_RX_arready"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="AXI4_LITE_RX_arvalid"/>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="AXI4_LITE_RX_awaddr"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="AXI4_LITE_RX_awready"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="AXI4_LITE_RX_awvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="AXI4_LITE_RX_bready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="AXI4_LITE_RX_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="AXI4_LITE_RX_bvalid"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="AXI4_LITE_RX_rdata"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="AXI4_LITE_RX_rready"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="AXI4_LITE_RX_rresp"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="AXI4_LITE_RX_rvalid"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="AXI4_LITE_RX_wdata"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="AXI4_LITE_RX_wready"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="AXI4_LITE_RX_wstrb"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="AXI4_LITE_RX_wvalid"/>
+      </PORTMAPS>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x0000FFFF" INSTANCE="spdif_in" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="AXI4_LITE_RX" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="AXI4_LITE"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="spdif_in"/>
+      </PERIPHERALS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="External_Interface_AXI4_LITE_TX" DATAWIDTH="32" NAME="AXI4_LITE_TX" TYPE="SLAVE">
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="16"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="design_core_processing_system7_0_0_FCLK_CLK0"/>
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="AXI4_LITE_TX_araddr"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="AXI4_LITE_TX_arready"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="AXI4_LITE_TX_arvalid"/>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="AXI4_LITE_TX_awaddr"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="AXI4_LITE_TX_awready"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="AXI4_LITE_TX_awvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="AXI4_LITE_TX_bready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="AXI4_LITE_TX_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="AXI4_LITE_TX_bvalid"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="AXI4_LITE_TX_rdata"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="AXI4_LITE_TX_rready"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="AXI4_LITE_TX_rresp"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="AXI4_LITE_TX_rvalid"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="AXI4_LITE_TX_wdata"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="AXI4_LITE_TX_wready"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="AXI4_LITE_TX_wstrb"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="AXI4_LITE_TX_wvalid"/>
+      </PORTMAPS>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x0000FFFF" INSTANCE="spdif_out" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="AXI4_LITE_TX" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="AXI4_LITE"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="spdif_out"/>
+      </PERIPHERALS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="External_Interface_SPDIF_RX" NAME="SPDIF_RX" TYPE="TARGET">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="SPDIF" PHYSICAL="SPDIF_RX_spdif"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="spdif_out_SPDIF_TX" NAME="SPDIF_TX" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="SPDIF" PHYSICAL="SPDIF_TX_spdif"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="32" FULLNAME="/spdif_in" HWVERSION="2.0" INSTANCE="spdif_in" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="spdif" VLNV="xilinx.com:ip:spdif:2.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=spdif;v=v2_0;d=pg045_spdif.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="c_axis_buffer_size" VALUE="1024"/>
+        <PARAMETER NAME="c_axis_tdata_width" VALUE="32"/>
+        <PARAMETER NAME="c_axis_tid_width" VALUE="5"/>
+        <PARAMETER NAME="c_component_name" VALUE="room_correction_inst_0_spdif_in_0"/>
+        <PARAMETER NAME="c_cstatus_reg" VALUE="1"/>
+        <PARAMETER NAME="c_s_axi_addr_width" VALUE="9"/>
+        <PARAMETER NAME="c_s_axi_data_width" VALUE="32"/>
+        <PARAMETER NAME="c_sample_change" VALUE="0"/>
+        <PARAMETER NAME="c_transmit_receive" VALUE="0"/>
+        <PARAMETER NAME="c_userdata_reg" VALUE="1"/>
+        <PARAMETER NAME="AXI_BUFFER_Size" VALUE="1024"/>
+        <PARAMETER NAME="CSTATUS_REG" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="room_correction_inst_0_spdif_in_0"/>
+        <PARAMETER NAME="FIFO_COUNT" VALUE="0"/>
+        <PARAMETER NAME="SAMPLE_CHANGE" VALUE="0"/>
+        <PARAMETER NAME="SPDIF_Mode" VALUE="0"/>
+        <PARAMETER NAME="USERDATA_REG" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x0000FFFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aud_clk_i" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_axis_aclk" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="O" LEFT="31" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spdif_out" PORT="s_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="m_axis_tid" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_m_axis_tid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spdif_out" PORT="s_axis_tid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="spdif_in_m_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spdif_out" PORT="s_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="spdif_in_m_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spdif_out" PORT="s_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rxclk_out" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESET">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESET"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="spdif_in_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="spdif_in_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="spdif_in_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="spdif_in_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="spdif_in_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="spdif_in_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_RX_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="spdif_i" SIGIS="undef" SIGNAME="spdif_in_spdif_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="SPDIF_RX_spdif"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="spdif_interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_AXI4_LITE_RX" DATAWIDTH="32" NAME="AXI4_LITE" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_core_processing_system7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="spdif_in_M_AXISTREAM" NAME="M_AXISTREAM" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_core_processing_system7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="5"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
+            <PORTMAP LOGICAL="TID" PHYSICAL="m_axis_tid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="External_Interface_SPDIF_RX" NAME="SPDIF_RX" TYPE="TARGET" VLNV="xilinx.com:interface:spdif:2.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="SPDIF" PHYSICAL="spdif_i"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="32" FULLNAME="/spdif_out" HWVERSION="2.0" INSTANCE="spdif_out" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="spdif" VLNV="xilinx.com:ip:spdif:2.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=spdif;v=v2_0;d=pg045_spdif.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="c_axis_buffer_size" VALUE="1024"/>
+        <PARAMETER NAME="c_axis_tdata_width" VALUE="32"/>
+        <PARAMETER NAME="c_axis_tid_width" VALUE="5"/>
+        <PARAMETER NAME="c_component_name" VALUE="room_correction_inst_0_spdif_out_0"/>
+        <PARAMETER NAME="c_cstatus_reg" VALUE="0"/>
+        <PARAMETER NAME="c_s_axi_addr_width" VALUE="9"/>
+        <PARAMETER NAME="c_s_axi_data_width" VALUE="32"/>
+        <PARAMETER NAME="c_sample_change" VALUE="0"/>
+        <PARAMETER NAME="c_transmit_receive" VALUE="1"/>
+        <PARAMETER NAME="c_userdata_reg" VALUE="0"/>
+        <PARAMETER NAME="AXI_BUFFER_Size" VALUE="1024"/>
+        <PARAMETER NAME="CSTATUS_REG" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="room_correction_inst_0_spdif_out_0"/>
+        <PARAMETER NAME="FIFO_COUNT" VALUE="1"/>
+        <PARAMETER NAME="SAMPLE_CHANGE" VALUE="0"/>
+        <PARAMETER NAME="SPDIF_Mode" VALUE="1"/>
+        <PARAMETER NAME="USERDATA_REG" VALUE="0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x0000FFFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aud_clk_i" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="rd_fifo_count" RIGHT="0" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESET">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESET"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="spdif_out_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="spdif_out_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="spdif_out_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="spdif_out_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="spdif_out_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="spdif_out_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="spdif_out_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="AXI4_LITE_TX_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axis_aclk" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spdif_in" PORT="m_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="s_axis_tid" RIGHT="0" SIGIS="undef" SIGNAME="spdif_in_m_axis_tid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spdif_in" PORT="m_axis_tid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="spdif_in_m_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spdif_in" PORT="m_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="spdif_in_m_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spdif_in" PORT="m_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="spdif_interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
+        <PORT DIR="O" NAME="spdif_o" SIGIS="undef" SIGNAME="spdif_out_spdif_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="room_correction_inst_0_imp" PORT="SPDIF_TX_spdif"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_AXI4_LITE_TX" DATAWIDTH="32" NAME="AXI4_LITE" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_core_processing_system7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="spdif_in_M_AXISTREAM" NAME="S_AXISTREAM" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_core_processing_system7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="5"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TID" PHYSICAL="s_axis_tid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="spdif_out_SPDIF_TX" NAME="SPDIF_TX" TYPE="INITIATOR" VLNV="xilinx.com:interface:spdif:2.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="SPDIF" PHYSICAL="spdif_o"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

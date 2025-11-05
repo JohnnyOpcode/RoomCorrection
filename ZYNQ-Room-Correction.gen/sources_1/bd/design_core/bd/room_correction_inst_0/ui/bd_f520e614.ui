@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-554,-223",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port AXI4_LITE_RX -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace port AXI4_LITE_TX -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port SPDIF_RX -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port SPDIF_TX -pg 1 -lvl 3 -x 670 -y 100 -defaultsOSRD
+preplace port port-id_RESET -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port port-id_CLK -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace inst spdif_in -pg 1 -lvl 1 -x 180 -y 190 -defaultsOSRD
+preplace inst spdif_out -pg 1 -lvl 2 -x 500 -y 120 -defaultsOSRD
+preplace netloc clk_wiz_clk_out1 1 0 2 20 310 350
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 2 30 70 340J
+preplace netloc AXI4_LITE_0_1 1 0 1 NJ 130
+preplace netloc AXI4_LITE_1_1 1 0 2 NJ 60 NJ
+preplace netloc SPDIF_RX_0_1 1 0 1 NJ 150
+preplace netloc spdif_in_M_AXISTREAM 1 1 1 330 80n
+preplace netloc spdif_out_SPDIF_TX 1 2 1 N 100
+levelinfo -pg 1 0 180 500 670
+pagesize -pg 1 -db -bbox -sgen -150 0 790 320
+"
+}
+0
